@@ -155,5 +155,10 @@ svg{
       height: auto; /*Mantiene las proporciones de la imagen*/
       border-radius: 5px; /*Bordes redondeados*/
   }
-
+/* Efecto de zoom por defecto */
+.servicios {
+  transition: transform 0.3s ease;  /* Suaviza el efecto de zoom */
+  transform-origin: center center;  /* El zoom ocurre desde el centro */
+  border: 2px solid transparent;  /* Sin borde por defecto */
   
+}

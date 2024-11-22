@@ -170,3 +170,29 @@ h4 {
 body {
   padding: 2em; 
 }
+/* Estilo para ocultar la información de Misión y Visión por defecto */
+.info {
+  display: none;
+}
+
+.toggle-btn {
+  background-color: #4CAF50;  /* Fondo verde */
+  color: white;  /* Texto blanco */
+  border: none;  /* Sin borde */
+  padding: 10px 20px;  /* Espaciado alrededor del texto */
+  text-align: center;  /* Alineación del texto */
+  text-decoration: none;  /* Sin subrayado */
+  display: inline-block;  /* Hacer que el botón se vea en línea */
+  font-size: 16px;  /* Tamaño de fuente */
+  cursor: pointer;  /* Cambiar el cursor a mano al pasar por encima */
+  border-radius: 5px;  /* Bordes redondeados */
+  transition: background-color 0.3s;  /* Transición suave al pasar el ratón */
+}
+
+.toggle-btn:hover {
+  background-color: #094d0c;  /* Fondo más oscuro cuando el ratón pasa por encima */
+}
+
+.toggle-btn:focus {
+  outline: none;  /* Quitar el borde de enfoque */
+}
