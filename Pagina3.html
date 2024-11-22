@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Servicios EYM ENVASES INDUSTRIALES E.I.R.L.</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='Pagina3.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo-carpeta/logo.png" alt="Logo Company">
+      <h2 class="nombre-empresa">EYM ENVASES INDUSTRIALES E.I.R.L.</h2>
+      <nav>
+        <a href="Pagina1.html" class="nav-link">Inicio</a>
+        <a href="Pagina2.html" class="nav-link">Productos</a>
+        <a href="Pagina3.html" class="nav-link">Servicios</a>
+        <a href="Pagina4.html" class="nav-link">Contactos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="servicios">
+    <h1>Servicios Ofrecidos</h1>
+    <hr><!--Linea horizontal-->
+    <div class="servicio">
+      <h3><i class="fas fa-recycle"><!--Icono de reciclaje--></i>Reacondicionamiento de Envases</h3>
+      <p>En EYM, nos especializamos en reacondicionar envases metálicos, plásticos y de cartón, asegurando
+        que cumplan con los más altos estándares de calidad y seguridad. Nuestro proceso incluye la inspección,
+        reparación y restauración de los envases, prolongando su vida útil.
+        Con nuestros servicios de reacondicionamiento, no solo ahorras costos, sino que también contribuyes a un
+        futuro más ecológico al optar por productos sostenibles.</p>
+      <img src="servicio1.png" alt="servicio1">
+    </div>
+
+    <div class="servicio">
+      <h3><i class="fas fa-water"></i>Lavado de Envase s</h3>
+      <p>Ofrecemos un servicio de lavado exhaustivo que elimina cualquier residuo y contaminación de los envases.
+        Utilizamos técnicas y productos de limpieza seguros y eficaces, garantizando que cada envase esté completamente
+        limpio y listo para su uso. Este proceso no solo asegura la calidad del contenido almacenado,
+        sino que también protege la salud y seguridad de tus productos.</p>
+      <img src="servicio2.jpg" alt="servicio2">
+    </div>
+
+    <div class="servicio">
+      <h3><i class="fas fa-paint-brush"></i>Pintado de Envases</h3>
+      <p>Ofrecemos un servicio de pintado de alta calidad que no solo mejora la apariencia estética de los envases,
+        sino que también proporciona una capa adicional de protección contra agentes externos.
+        Utilizamos pinturas ecológicas y duraderas que aseguran una larga vida útil del envase y una presentación
+        profesional que refleja la calidad de tu producto.</p>
+      <img src="servicio3.png" alt="servicio3">
+    </div>
+
+    <div class="servicio">
+      <h3><i class="fas fa-truck"></i>Distribución de Envases</h3>
+      <p>Garantizamos un servicio de distribución eficiente y puntual, llevando tus envases directamente a tu puerta.
+        Nuestra logística está diseñada para asegurar que cada entrega se realice de manera rápida y segura,
+        minimizando el tiempo de espera y optimizando tus operaciones. Con nuestro servicio de distribución,
+        puedes confiar en que tus envases llegarán a su destino en perfectas condiciones y a tiempo.</p>
+      <img src="servicio4.jpg" alt="servicio4">
+    </div>
+  </section>
+
+  //VENTANA DEL MODAL (VENTANA FLOTANTE)
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <p>Descubre los servicios que ofrecemos para cuidar tus envases y optimizar tus procesos. ¡Bienvenidoooo!</p>
+      <button onclick="cerrarModal()">Empecemos</button>
+    </div>
+  </div>
+
+  //FOOTER
+  <div class="footer">
+    <p>RUC:12345678910</p>
+    <p>Dirección: Mz. D, lote 6-F, Chacra Cerro – Comas (espalda de la piscina El Remanso - Trapiche)
+  </div>
+
+  <script>document.addEventListener('DOMContentLoaded', () => {
+      const currentPage = document.title; // Verifica la página actual
+      if (currentPage === 'Servicios EYM ENVASES INDUSTRIALES E.I.R.L.') {
+        const modal = document.getElementById('welcomeModal');
+        modal.style.display = 'flex'; // Muestra el modal
+      }
+    });
+
+    function cerrarModal() {
+      const modal = document.getElementById('welcomeModal');
+      modal.style.display = 'none'; // Oculta el modal
+    }</script>
+
+</body>
+</html>

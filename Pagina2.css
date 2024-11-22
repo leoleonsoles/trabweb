@@ -1,0 +1,159 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;/*Expande hacia todo el area*/
+  background-color: #f4f4f4;
+}
+
+header{
+  background-color:rgb(12, 55, 105);
+  color: white; /* Color del texto en el encabezado */
+  padding: 20px; /* Espaciado en el encabezado */
+  text-align: center; /* Centrar texto en el encabezado */
+  display: flex;
+  justify-content: space-between; /*Que se separen*/
+  min-height:70px; /*Altura minima*/
+  align-items: center; /*Alinear items al centro*/
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;/*Separa del logo a la derecha*/
+}
+
+nav {
+  background-color:rgb(12, 55, 105);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20%;
+}
+
+nav a {
+  color: rgb(236, 228, 228);
+  font-weight: 600;/*Negrita*/
+  text-decoration: none;/*Sin ninguna decoracion*/
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.5s ease;
+}
+
+nav a::after {
+  content: '';/*Un comentario por agregar*/
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;/*Inicio desde posicion 0 Y*/
+  left: 0;/*Inicio desde posicion 0 -X*/
+  background-color: white;
+  transform: scaleX(0);/*Escala solamente por eje X*/
+  transform-origin: bottom right;/*Superior Derecha*/
+  transition: transform 0.8s ease;/*Aceleracion*/
+}
+
+nav a:hover {
+  color: rgb(111, 192, 230);
+}
+
+nav a:hover::after {
+  transform: scaleX(1);/*Escalas :1->Todo el texto, otro valor pasa del tamano*/
+  transform-origin: bottom left;/*Superior Izquierda*/
+}
+
+svg{
+  width: 60px;
+}
+
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  h2 {
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 34px;
+  }
+  
+  .servicios {
+    padding: 60px; /* Espacio interno de la sección de servicios */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centrar la sección en la página */
+    background: white; /* Fondo blanco para la sección de servicios */
+    border-radius: 20px; /* Bordes redondeados */
+  }
+  
+  h1 {
+    text-align: center; /* Centrar el título de la sección */
+    color: #333; /* Color del texto del título */
+  }
+  
+  /*ESTILOS DE LA TABLA*/
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Centra la tabla con un margen superior e inferior */ 
+    flex: 1; /* Permite que la tabla ocupe el espacio disponible */
+    }
+
+    th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    }
+
+    th {
+    background-color: #72cf76; ;
+    }
+
+    tbody tr{
+      background-color: #f9f9f9; 
+    }
+
+
+
+    /*GRID LAYOUT*/
+    .contenedor-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /*Dos columnas de igual tamaño*/
+      gap: 10px; /*Espacio entre las imágenes*/
+      padding: 10px;
+  }
+  
+  .elemento-grid {
+      display: flex;
+      justify-content: center; /*Centrar la imagen horizontalmente*/
+      align-items: center; /*Centrar la imagen verticalmente*/
+      background-color: #f0f0f0; 
+      border: 1px solid #ccc; /*Borde alrededor de cada recuadro*/
+      padding: 10px;
+  }
+  
+  .elemento-grid img {
+      max-width: 100%; /*Asegura que la imagen se ajuste al contenedor*/
+      height: auto; /*Mantiene las proporciones de la imagen*/
+      border-radius: 5px; /*Bordes redondeados*/
+  }
+
+  

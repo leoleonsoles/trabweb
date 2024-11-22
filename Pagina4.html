@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contactos EYM ENVASES INDUSTRIALES E.I.R.L.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Pagina4.css'>
+    <script src="pagina4.js" defer></script> 
+</head>
+
+<body>
+  <div class="content-wrapper">
+      <header>
+          <div class="logo">
+              <img src="logo-carpeta/logo.png" alt="Logo Company">
+              <h2 class="nombre-empresa">EYM ENVASES INDUSTRIALES E.I.R.L.</h2>
+              <nav>
+                  <a href="Pagina1.html" class="nav-link">Inicio</a>
+                  <a href="Pagina2.html" class="nav-link">Productos</a>
+                  <a href="Pagina3.html" class="nav-link">Servicios</a>
+                  <a href="Pagina4.html" class="nav-link">Contactos</a>
+              </nav>
+          </div>
+      </header>
+
+      <main>
+          <img src="imagen-personalizada/cilindroimagen1.png" alt="Descripción de la imagen" class="imagen-personalizada">
+          <form action="/submit" method="post">
+            <fieldset>
+                <legend>¿Necesitas ayuda?</legend>
+                <hr/>
+                <blockquote>
+                    Déjanos tus datos y con gusto uno de nuestros asesores se pondrán en contacto contigo lo antes posible.
+                </blockquote>
+                
+                <p><label for="nombres">Nombres:</label></p>
+                <input type="text" id="nombres" name="nombres" >
+                
+                <p><label for="apellidos">Apellidos:</label></p>
+                <input type="text" id="apellidos" name="apellidos" >
+                
+                <p><label for="email">Email:</label></p>
+                <input type="email" id="email" name="email" >
+                
+                <p><label for="teléfono">Teléfono:</label></p>
+                <input type="tel" id="teléfono" name="teléfono" >
+                
+                <p><label for="comentarios">Comentarios:</label></p>
+                <textarea id="comentarios" name="comentarios"></textarea>
+                
+                <p><button type="submit">Enviar</button></p>
+            </fieldset>
+          </form>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <p>Gracias por tu comentario, lo tendremos en cuenta.</p>
+                <button id="continueButton">Continuar</button>
+            </div>
+          </div>
+
+  <footer class="footer">
+      <p>RUC: 12345678910</p>
+      <p>Dirección: Mz. D, lote 6-F, Chacra Cerro – Comas (espalda de la piscina El Remanso - Trapiche)</p>
+  </footer>
+</body>
+</html>
