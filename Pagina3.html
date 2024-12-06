@@ -7,6 +7,7 @@
   <title>Servicios EYM ENVASES INDUSTRIALES E.I.R.L.</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='Pagina3.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='stylesMenu.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script type="module" src="script.js"></script>
 </head>
@@ -16,20 +17,26 @@
     <div class="logo">
       <img src="logo-carpeta/logo.png" alt="Logo Company">
       <h2 class="nombre-empresa">EYM ENVASES INDUSTRIALES E.I.R.L.</h2>
-      <nav>
-        <a href="Pagina1.html" class="nav-link">Inicio</a>
-        <a href="Pagina2.html" class="nav-link">Productos</a>
-        <a href="Pagina3.html" class="nav-link">Servicios</a>
-        <a href="Pagina4.html" class="nav-link">Contactos</a>
+      <button id="boton-hamburguesa3">
+        <span>&#9776;</span> Menú
+      </button>
+      <nav id="menu-hamburguesa3" style="display:none;">
+        <ul>
+          <li><a href="Pagina1.html">Inicio</a></li>
+          <li><a href="Pagina2.html">Productos</a></li>
+          <li><a href="Pagina3.html">Servicios</a></li>
+          <li><a href="Pagina4.html">Contactos</a></li>
+          <li><a href="Pagina5.html">Tareas</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <section class="servicios">
     <h1>Servicios Ofrecidos</h1>
-    <hr><!--Linea horizontal-->
+    <hr />
     <div class="servicio">
-      <h3><i class="fas fa-recycle"><!--Icono de reciclaje--></i>Reacondicionamiento de Envases</h3>
+      <h3><i class="fas fa-recycle"></i>Reacondicionamiento de Envases</h3>
       <p>En EYM, nos especializamos en reacondicionar envases metálicos, plásticos y de cartón, asegurando
         que cumplan con los más altos estándares de calidad y seguridad. Nuestro proceso incluye la inspección,
         reparación y restauración de los envases, prolongando su vida útil.
@@ -39,7 +46,7 @@
     </div>
 
     <div class="servicio">
-      <h3><i class="fas fa-water"></i>Lavado de Envase s</h3>
+      <h3><i class="fas fa-water"></i>Lavado de Envases</h3>
       <p>Ofrecemos un servicio de lavado exhaustivo que elimina cualquier residuo y contaminación de los envases.
         Utilizamos técnicas y productos de limpieza seguros y eficaces, garantizando que cada envase esté completamente
         limpio y listo para su uso. Este proceso no solo asegura la calidad del contenido almacenado,
@@ -66,7 +73,7 @@
     </div>
   </section>
 
-  //VENTANA DEL MODAL (VENTANA FLOTANTE)
+  <!--VENTANA DEL MODAL (VENTANA FLOTANTE)-->
   <div id="welcomeModal" class="modal">
     <div class="modal-content">
       <p>Descubre los servicios que ofrecemos para cuidar tus envases y optimizar tus procesos. ¡Bienvenidoooo!</p>
@@ -74,24 +81,11 @@
     </div>
   </div>
 
-  //FOOTER
   <div class="footer">
     <p>RUC:12345678910</p>
     <p>Dirección: Mz. D, lote 6-F, Chacra Cerro – Comas (espalda de la piscina El Remanso - Trapiche)
   </div>
-
-  <script>document.addEventListener('DOMContentLoaded', () => {
-      const currentPage = document.title; // Verifica la página actual
-      if (currentPage === 'Servicios EYM ENVASES INDUSTRIALES E.I.R.L.') {
-        const modal = document.getElementById('welcomeModal');
-        modal.style.display = 'flex'; // Muestra el modal
-      }
-    });
-
-    function cerrarModal() {
-      const modal = document.getElementById('welcomeModal');
-      modal.style.display = 'none'; // Oculta el modal
-    }</script>
-
+  <script src="JSMenu.js" defer></script>
 </body>
+
 </html>

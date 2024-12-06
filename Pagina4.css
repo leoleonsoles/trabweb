@@ -1,0 +1,148 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;/*Expande hacia todo el area*/
+  background-color: #f4f4f4;
+}
+
+header{
+  background-color:rgb(12, 55, 105);
+  color: white; /* Color del texto en el encabezado */
+  padding: 20px; /* Espaciado en el encabezado */
+  text-align: center; /* Centrar texto en el encabezado */
+  display: flex;
+  justify-content: space-between; /*Que se separen*/
+  min-height:70px; /*Altura minima*/
+  align-items: center; /*Alinear items al centro*/
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;/*Separa del logo a la derecha*/
+}
+
+nav {
+  background-color:rgb(12, 55, 105);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20%;
+}
+
+nav a {
+  color: rgb(236, 228, 228);
+  font-weight: 600;/*Negrita*/
+  text-decoration: none;/*Sin ninguna decoracion*/
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.5s ease;
+}
+
+nav a::after {
+  content: '';/*Un comentario por agregar*/
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;/*Inicio desde posicion 0 Y*/
+  left: 0;/*Inicio desde posicion 0 -X*/
+  background-color: white;
+  transform: scaleX(0);/*Escala solamente por eje X*/
+  transform-origin: bottom right;/*Superior Derecha*/
+  transition: transform 0.8s ease;/*Aceleracion*/
+}
+
+nav a:hover {
+  color: rgb(111, 192, 230);
+}
+
+nav a:hover::after {
+  transform: scaleX(1);/*Escalas :1->Todo el texto, otro valor pasa del tamano*/
+  transform-origin: bottom left;/*Superior Izquierda*/
+}
+
+svg{
+  width: 60px;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+  h2 {
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 34px;
+  }
+  
+  /*Estilo del formulario*/
+  input {
+    font-size: 16px;
+    color: #333;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   }
+
+   button {
+    background-color: #FF9800; /* Naranja para el botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    font-size: 1em; /* Tamaño de fuente */;
+   }
+
+   blockquote{
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin: 15px 0;
+   }
+
+   fieldset{
+     width: 40%;
+     margin: 0 50%;
+   }
+
+   /*<!--Estilo de las imagenes-->*/
+.imagen-personalizada {
+width: 35%; /* Ajusta el ancho al 100% del contenedor */
+height: auto; /* Mantiene la proporción de la imagen */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+position: absolute; /* Posiciona la imagen de manera absoluta */
+display: block; /*s Hace que las imágenes se muestren como bloques */
+margin: 20px 20px 10px 0;
+}
+
+     .banner {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 2rem;
+  }
+  
+  legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color:#333;
+  }

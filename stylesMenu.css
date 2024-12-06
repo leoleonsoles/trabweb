@@ -1,0 +1,245 @@
+/* Centrar el menú completo (contenedor de los enlaces) en la página */
+#menu-hamburguesa {
+  display: none; /* Oculta el menú por defecto */
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  text-align: center;
+}
+
+/* Asegura que los enlaces estén en bloque y se muestren correctamente */
+#menu-hamburguesa ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  
+}
+
+#menu-hamburguesa ul li {
+  margin: 5px; /* Espacio entre los enlaces */
+}
+
+#menu-hamburguesa ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block; /* Los enlaces se mostrarán en bloque */
+  padding: 5px 10px; /* Reducir espacio interior (arriba/abajo y a los lados) */
+  transition: background-color 0.3s; /* Agrega una transición para el hover */
+}
+/* Efecto hover para los enlaces */
+#menu-hamburguesa ul li a:hover {
+  background-color: #555; /* Cambia el color de fondo cuando se pasa el ratón por encima */
+}
+
+
+
+/* Estilos del botón de hamburguesa */
+#boton-hamburguesa {
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Posiciona el botón de hamburguesa en la parte superior */
+  top: 63px; /* Ajusta el espacio superior */
+  left: 95%; /* Centra el botón a la izquierda */
+  transform: translateX(-95%); /* Ajusta el botón para centrarlo perfectamente */
+  z-index: 101; /* Asegúrate de que el botón esté por encima del menú */
+}
+
+
+
+
+
+
+
+/* Centrar el menú completo para PRODUCTOS */
+#menu-hamburguesa2 {
+  display: none; /* Oculta el menú por defecto */
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  text-align: center;
+}
+
+/* Asegura que los enlaces estén en bloque y se muestren correctamente */
+#menu-hamburguesa2 ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  
+}
+
+#menu-hamburguesa2 ul li {
+  margin: 5px; /* Espacio entre los enlaces */
+}
+
+#menu-hamburguesa2 ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block; /* Los enlaces se mostrarán en bloque */
+  padding: 5px 10px; /* Reducir espacio interior (arriba/abajo y a los lados) */
+  transition: background-color 0.3s; /* Agrega una transición para el hover */
+}
+/* Efecto hover para los enlaces */
+#menu-hamburguesa2 ul li a:hover {
+  background-color: #555; /* Cambia el color de fondo cuando se pasa el ratón por encima */
+}
+
+
+
+/* Estilos del botón de hamburguesa */
+#boton-hamburguesa2 {
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Posiciona el botón de hamburguesa en la parte superior */
+  top: 30px; /* Ajusta el espacio superior */
+  left: 95%; /* Centra el botón a la izquierda */
+  transform: translateX(-95%); /* Ajusta el botón para centrarlo perfectamente */
+  z-index: 101; /* Asegúrate de que el botón esté por encima del menú */
+}
+
+
+
+
+/* Centrar el menú completo para SERVICIOS */
+#menu-hamburguesa3 {
+  display: none; /* Oculta el menú por defecto */
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  text-align: center;
+}
+
+/* Asegura que los enlaces estén en bloque y se muestren correctamente */
+#menu-hamburguesa3 ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  
+}
+
+#menu-hamburguesa3 ul li {
+  margin: 5px; /* Espacio entre los enlaces */
+}
+
+#menu-hamburguesa3 ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block; /* Los enlaces se mostrarán en bloque */
+  padding: 5px 10px; /* Reducir espacio interior (arriba/abajo y a los lados) */
+  transition: background-color 0.3s; /* Agrega una transición para el hover */
+}
+/* Efecto hover para los enlaces */
+#menu-hamburguesa3 ul li a:hover {
+  background-color: #555; /* Cambia el color de fondo cuando se pasa el ratón por encima */
+}
+
+
+
+/* Estilos del botón de hamburguesa */
+#boton-hamburguesa3 {
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Posiciona el botón de hamburguesa en la parte superior */
+  top: 30px; /* Ajusta el espacio superior */
+  left: 95%; /* Centra el botón a la izquierda */
+  transform: translateX(-95%); /* Ajusta el botón para centrarlo perfectamente */
+  z-index: 101; /* Asegúrate de que el botón esté por encima del menú */
+}
+
+
+
+
+
+
+
+
+
+/* Centrar el menú completo para CONTACTOS */
+#menu-hamburguesa4 {
+  display: none; /* Oculta el menú por defecto */
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  text-align: center;
+}
+
+/* Asegura que los enlaces estén en bloque y se muestren correctamente */
+#menu-hamburguesa4 ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  
+}
+
+#menu-hamburguesa4 ul li {
+  margin: 5px; /* Espacio entre los enlaces */
+}
+
+#menu-hamburguesa4 ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block; /* Los enlaces se mostrarán en bloque */
+  padding: 5px 10px; /* Reducir espacio interior (arriba/abajo y a los lados) */
+  transition: background-color 0.3s; /* Agrega una transición para el hover */
+}
+/* Efecto hover para los enlaces */
+#menu-hamburguesa4 ul li a:hover {
+  background-color: #555; /* Cambia el color de fondo cuando se pasa el ratón por encima */
+}
+
+
+
+/* Estilos del botón de hamburguesa */
+#boton-hamburguesa4 {
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Posiciona el botón de hamburguesa en la parte superior */
+  top: 30px; /* Ajusta el espacio superior */
+  left: 95%; /* Centra el botón a la izquierda */
+  transform: translateX(-95%); /* Ajusta el botón para centrarlo perfectamente */
+  z-index: 101; /* Asegúrate de que el botón esté por encima del menú */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

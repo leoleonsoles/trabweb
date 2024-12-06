@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles2.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/check.jpeg">
+  <title> MI LISTA DE SOLICITUDES </title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo-carpeta/logo.png" alt="Logo Company">
+      <h2 class="nombre-empresa">EYM ENVASES INDUSTRIALES E.I.R.L.</h2>
+      <button id="boton-hamburguesa5">
+        <span>&#9776;</span> Menú
+      </button>
+      <nav id="menu-hamburguesa5" style="display:none;">
+        <ul>
+          <li><a href="Pagina1.html">Inicio</a></li>
+          <li><a href="Pagina2.html">Productos</a></li>
+          <li><a href="Pagina3.html">Servicios</a></li>
+          <li><a href="Pagina4.html">Contactos</a></li>
+          <li><a href="Pagina5.html">Tareas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <h1>Mis Tareas</h1>
+    <input id="ingresar-tarea" placeholder="Ingresa una tarea">
+    <button type="button">Crear tarea</button>
+    <div id="lista-de-tareas"></div>
+  </main>
+  <script src="Ltareas.js"></script>
+  <script src="JSMenu.js" defer></script>
+</body>
+</html>

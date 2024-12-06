@@ -110,7 +110,7 @@ h4 {
 .cilindrosimagen {
   display: block; /* Hace que la imagen se trate como un bloque */
   margin: 20px auto; /* Centra la imagen horizontalmente */
-  width: 40%; 
+  width: 80%; 
   height: 400px; /* Mantiene la altura fija */
 }
 
@@ -132,12 +132,23 @@ h4 {
   background:#e3eef8;
   font-size: 24px;
   color: black;
-}
+  align-items: center;
+  justify-content: center; 
+  height: 10vh;
+} 
 
 .main {
   text-align: justify;
   background: #e3eef8
   
+}
+
+#mision p {
+  text-align: left;
+}
+
+#vision p {
+  text-align: left;
 }
 
 .aside-1 {
@@ -170,6 +181,8 @@ h4 {
 body {
   padding: 2em; 
 }
+
+
 /* Estilo para ocultar la información de Misión y Visión por defecto */
 .info {
   display: none;

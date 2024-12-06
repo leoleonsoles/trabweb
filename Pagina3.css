@@ -1,177 +1,166 @@
-body{
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-}
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;/*Expande hacia todo el area*/
+    background-color: #f4f4f4;
+  }
+  
+  header{
+    background-color:rgb(12, 55, 105);
+    color: white; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado en el encabezado */
+    text-align: center; /* Centrar texto en el encabezado */
+    display: flex;
+    justify-content: space-between; /*Que se separen*/
+    min-height:70px; /*Altura minima*/
+    align-items: center; /*Alinear items al centro*/
+  }
+  
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;/*Separa del logo a la derecha*/
+  }
+  
+  nav {
+    background-color:rgb(12, 55, 105);
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20%;
+  }
+  
+  nav a {
+    color: rgb(236, 228, 228);
+    font-weight: 600;/*Negrita*/
+    text-decoration: none;/*Sin ninguna decoracion*/
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.5s ease;
+  }
+  
+  nav a::after {
+    content: '';/*Un comentario por agregar*/
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;/*Inicio desde posicion 0 Y*/
+    left: 0;/*Inicio desde posicion 0 -X*/
+    background-color: white;
+    transform: scaleX(0);/*Escala solamente por eje X*/
+    transform-origin: bottom right;/*Superior Derecha*/
+    transition: transform 0.8s ease;/*Aceleracion*/
+  }
+  
+  nav a:hover {
+    color: rgb(111, 192, 230);
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);/*Escalas :1->Todo el texto, otro valor pasa del tamano*/
+    transform-origin: bottom left;/*Superior Izquierda*/
+  }
+  
+  svg{
+    width: 60px;
+  }
+  
+    .footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin: 0;
+    }
+  
+    h2 {
+      color: #F5F5F5;
+      font-weight: bold;
+      font-size: 34px;
+    }
+    
+    /* Estilos de la Sección de Servicios */
+  .servicios {
+    padding: 60px; /* Espacio interno de la sección de servicios */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centrar la sección en la página */
+    background: white; /* Fondo blanco para la sección de servicios */
+    border-radius: 20px; /* Bordes redondeados */
+  }
+  
+  h1 {
+    text-align: center; /* Centrar el título de la sección */
+    color: #333; /* Color del texto del título */
+  }
+  
+  .servicio {
+    margin: 20px 0; /* Espaciado entre servicios */
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre servicios */
+    padding-bottom: 20px; /* Espacio debajo de cada servicio */
+  }
+  .servicio h3 {
+    color: #4CAF50; /* Color para los títulos de servicios */
+  }
+  .servicio p {
+    color: #555; /* Color para el texto de descripción de servicios */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+  }
+    .servicio h3 i {
+    font-size: 30px; /*Tamaño del icono*/
+    color: rgb(12, 55, 105); /*Color del icono*/
+    margin-right: 10px; /*Espacio entre el icono y el texto*/
+  }
+  
+  .servicio img {
+    display: block; /*Asegura que la imagen sea un bloque*/
+    margin: 20px auto; /*Centra la imagen horizontalmente y agrega un margen vertical*/
+    width: 90%; /*Ajusta el ancho de la imagen al 80% del contenedor*/
+    max-width: 900px; /*Limita el ancho máximo a 300px*/
+    height: auto; /*Mantiene la relación de aspecto de la imagen*/
+  }
 
-header{
-  background-color:rgb(12, 55, 105);
-  color: white; /* Color del texto en el encabezado */
-  padding: 20px; /* Espaciado en el encabezado */
-  text-align: center; /* Centrar texto en el encabezado */
-  display: flex;
-  justify-content: space-between; /*Que se separen*/
-  min-height:70px; /*Altura minima*/
-  align-items: center; /*Alinear items al centro*/
-}
-
-.logo{
-  display: flex;
+  /* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
   align-items: center;
 }
 
-.logo img{
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-nav {
-  background-color:rgb(12, 55, 105);
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0 20%;
-}
-
-nav a {
-  color: rgb(236, 228, 228);
-  font-weight: 600;
-  text-decoration: none;
-  padding: 5px 10px;
-  position: relative;
-  transition: color 0.5s ease;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.8s ease;
-}
-
-nav a:hover {
-  color: rgb(111, 192, 230);
-}
-
-nav a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-svg{
-  width: 60px;
-}
-
-  .footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-top: auto;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-  }
-
-  h2 {
-    color: #F5F5F5;
-    font-weight: bold;
-    font-size: 34px;
-  }
-  
-
-  /* Estilos de la Sección de Servicios */
-.servicios {
-  padding: 60px; /* Espacio interno de la sección de servicios */
-  max-width: 800px; /* Ancho máximo de la sección */
-  margin: 0 auto; /* Centrar la sección en la página */
-  background: white; /* Fondo blanco para la sección de servicios */
-  border-radius: 20px; /* Bordes redondeados */
-}
-
-h1 {
-  text-align: center; /* Centrar el título de la sección */
-  color: #333; /* Color del texto del título */
-}
-
-.servicio {
-  margin: 20px 0; /* Espaciado entre servicios */
-  border-bottom: 1px solid #ddd; /* Línea divisoria entre servicios */
-  padding-bottom: 20px; /* Espacio debajo de cada servicio */
-}
-
-.servicio h3 {
-  color: #4CAF50; /* Color para los títulos de servicios */
-}
-
-.servicio p {
-  color: #555; /* Color para el texto de descripción de servicios */
-  line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
-}
-
-.servicio h3 i {
-  font-size: 30px;
-  color: rgb(12, 55, 105);
-  margin-right: 10px;
-}
-
-.servicio img {
-  display: block; 
-  margin: 20px auto; 
-  width: 90%;
-  max-width: 900px; 
-  height: auto; 
-}
-.modal {
-  display: none; /* Oculto por defecto */
-  position: fixed; /* Fija el modal en pantalla */
-  top: 0; left: 0; width: 100%; height: 100%; /* Ocupa toda la pantalla */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  z-index: 1000; /* Lo pone encima de otros elementos */
-  justify-content: center; /* Centra el contenido horizontal */
-  align-items: center; /* Centra el contenido vertical */
-}
-
-/* Contenido del modal - Cuadro con fondo azul pastel y texto centrado */
 .modal-content {
-  background-color: #E3F2FD; /* Azul pastel claro */
-  color: #424242; /* Texto gris oscuro */
-  padding: 20px; /* Espacio interno */
-  border-radius: 10px; /* Bordes redondeados */
-  text-align: center; /* Centra el texto */
-  width: 80%; max-width: 300px; /* Ancho controlado */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-/* Botón del modal - Estilo del botón amarillo con bordes redondeados */
 .modal-content button {
-  background-color: #FFEB3B; /* Amarillo pastel */
-  color: white; /* Texto blanco */
-  border: none; /* Sin borde */
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Mano al pasar el ratón */
-  font-size: 16px; /* Tamaño del texto */
-  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
-}
-
-/* Efecto hover - Cambia el color del botón al pasar el ratón */
-.modal-content button:hover {
-  background-color: #FDD835; /* Amarillo más oscuro */
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }

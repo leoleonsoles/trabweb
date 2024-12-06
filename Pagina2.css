@@ -111,7 +111,7 @@ svg{
   
   /*ESTILOS DE LA TABLA*/
   table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     margin: 20px auto; /* Centra la tabla con un margen superior e inferior */ 
     flex: 1; /* Permite que la tabla ocupe el espacio disponible */
@@ -155,10 +155,13 @@ svg{
       height: auto; /*Mantiene las proporciones de la imagen*/
       border-radius: 5px; /*Bordes redondeados*/
   }
-/* Efecto de zoom por defecto */
+
+  
+  /* Efecto de zoom por defecto */
 .servicios {
   transition: transform 0.3s ease;  /* Suaviza el efecto de zoom */
   transform-origin: center center;  /* El zoom ocurre desde el centro */
   border: 2px solid transparent;  /* Sin borde por defecto */
   
 }
+

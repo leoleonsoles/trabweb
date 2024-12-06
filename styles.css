@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;/*Expande hacia todo el area*/
+  background-color: #f4f4f4;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #003366; /* Azul marino para el menú */
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: white; /* Texto blanco en el menú */
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+main {
+  padding: 1rem;
+}
+
+/*!--El titulo principal-->*/
+h1 {
+  color: #003366; /* Azul para los encabezados */
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/*<!--Los subtitulos-->*/
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+h4 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/*<!--Estilo de las tablas-->*/
+table {
+  width: 40%;
+  border-collapse: collapse;
+  margin: 0 50%; 
+  flex: 1; /* Permite que la tabla ocupe el espacio disponible */
+  
+  }
+  th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  }
+  th {
+  background-color: #f2f2f2;
+  }
+
+  /*<!--Estilo de el footer-->*/
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+  }
+         
+/*<!--Estilo de el formulario-->*/
+   input {
+    font-size: 16px;
+    color: #333;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   }
+   button {
+    background-color: #FF9800; /* Naranja para el botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    font-size: 1em; /* Tamaño de fuente */;
+   }
+
+   
+   blockquote{
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin: 15px 0;
+
+   }
+   fieldset{
+     width: 40%;
+     margin: 0 50%;
+   }
+   
+/*<!--Estilo de las imagenes-->*/
+.imagen-personalizada {
+  width: 35%; /* Ajusta el ancho al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: absolute; /* Posiciona la imagen de manera absoluta */
+  top: 15%; /* Coloca la imagen en la parte superior */
+  left: 0; /* Coloca la imagen a la izquierda */
+  display: block; /* Hace que las imágenes se muestren como bloques */
+  margin: 10px auto;
+ }
+   .banner {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 2rem;
+}
+legend {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
